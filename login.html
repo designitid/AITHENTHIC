@@ -20,131 +20,183 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="font-sans text-gray-900 antialiased">
+    <div class="relative h-screen bg-gray-50 overflow-hidden">
       <div
-        class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-[#f8f4f3]"
+        class="flex min-h-full flex-col justify-center py-12 sm:px-6 lg:px-8"
       >
-        <div>
-          <a href="index.html">
-            <h2 class="font-bold text-3xl">
-              AI
-              <span class="bg-[#f84525] text-white px-2 rounded-md"
-                >THENTHIC</span
-              >
-            </h2>
-          </a>
+        <div
+          class="sm:mx-auto sm:w-full sm:max-w-md justify-center items-center text-center"
+        >
+          <a
+            class="text-4xl font-bold items-center justify-center text-center self-center place-self-center"
+            href="index.html"
+            >AITHENTHIC</a
+          >
         </div>
 
-        <div
-          class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg"
-        >
-          <form method="POST" action="{{ route('login') }}">
-            <div class="py-8">
-              <center>
-                <span class="text-2xl font-semibold">Log In</span>
-              </center>
-            </div>
-
-            <div>
-              <label
-                class="block font-medium text-sm text-gray-700"
-                for="email"
-                value="Email"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#f84525]"
-              />
-            </div>
-
-            <div class="mt-4">
-              <label
-                class="block font-medium text-sm text-gray-700"
-                for="password"
-                value="Password"
-              />
-              <div class="relative">
-                <input
-                  id="password"
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  required
-                  autocomplete="current-password"
-                  class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#f84525]"
-                />
-
-                <div
-                  class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5"
+        <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+          <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+            <form class="space-y-6" action="#" method="POST">
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700"
+                  >Email address</label
                 >
-                  <button
-                    type="button"
-                    id="togglePassword"
-                    class="text-gray-500 focus:outline-none focus:text-gray-600 hover:text-gray-600"
+                <div class="mt-1">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required=""
+                    class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="password"
+                  class="block text-sm font-medium text-gray-700"
+                  >Password</label
+                >
+                <div class="mt-1">
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    autocomplete="current-password"
+                    required=""
+                    class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  />
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <input
+                    id="remember-me"
+                    name="remember-me"
+                    type="checkbox"
+                    class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  />
+                  <label
+                    for="remember-me"
+                    class="ml-2 block text-sm text-gray-900"
+                    >Remember me</label
                   >
+                </div>
+
+                <div class="text-sm">
+                  <a
+                    href="#"
+                    class="font-medium text-blue-600 hover:text-blue-500"
+                    >Forgot your password?</a
+                  >
+                </div>
+              </div>
+
+              <div>
+                <button
+                  href="https://aithenthic.zapier.app/"
+                  type="submit"
+                  class="flex w-full justify-center rounded-md border border-transparent bg-blue-700 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                >
+                  Sign in
+                </button>
+              </div>
+            </form>
+
+            <div class="mt-6">
+              <div class="relative">
+                <div class="absolute inset-0 flex items-center">
+                  <div class="w-full border-t border-gray-300"></div>
+                </div>
+                <div class="relative flex justify-center text-sm">
+                  <span class="bg-white px-2 text-gray-500"
+                    >Or continue with</span
+                  >
+                </div>
+              </div>
+
+              <div class="mt-6 grid grid-cols-3 gap-3">
+                <div>
+                  <a
+                    href="#"
+                    class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-blue-700 py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-blue-500"
+                  >
+                    <span class="sr-only">Sign in with Facebook</span>
                     <svg
+                      class="w-6 h-6 text-gray-800 dark:text-white"
+                      aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
-                      class="w-6 h-6"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
                       viewBox="0 0 24 24"
-                      style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
                     >
                       <path
-                        d="M12 4.998c-1.836 0-3.356.389-4.617.971L3.707 2.293 2.293 3.707l3.315 3.316c-2.613 1.952-3.543 4.618-3.557 4.66l-.105.316.105.316C2.073 12.382 4.367 19 12 19c1.835 0 3.354-.389 4.615-.971l3.678 3.678 1.414-1.414-3.317-3.317c2.614-1.952 3.545-4.618 3.559-4.66l.105-.316-.105-.316c-.022-.068-2.316-6.686-9.949-6.686zM4.074 12c.103-.236.274-.586.521-.989l5.867 5.867C6.249 16.23 4.523 13.035 4.074 12zm9.247 4.907-7.48-7.481a8.138 8.138 0 0 1 1.188-.982l8.055 8.054a8.835 8.835 0 0 1-1.763.409zm3.648-1.352-1.541-1.541c.354-.596.572-1.28.572-2.015 0-.474-.099-.924-.255-1.349A.983.983 0 0 1 15 11a1 1 0 0 1-1-1c0-.439.288-.802.682-.936A3.97 3.97 0 0 0 12 7.999c-.735 0-1.419.218-2.015.572l-1.07-1.07A9.292 9.292 0 0 1 12 6.998c5.351 0 7.425 3.847 7.926 5a8.573 8.573 0 0 1-2.957 3.557z"
-                      ></path>
+                        fill-rule="evenodd"
+                        d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                        clip-rule="evenodd"
+                      />
                     </svg>
-                  </button>
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href="#"
+                    class="bg-blue-700 inline-flex w-full justify-center rounded-md border border-gray-300 py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-blue-500"
+                  >
+                    <span class="sr-only">Sign in with Google</span>
+                    <svg
+                      class="w-6 h-6 text-gray-800 dark:text-white"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.037 21.998a10.313 10.313 0 0 1-7.168-3.049 9.888 9.888 0 0 1-2.868-7.118 9.947 9.947 0 0 1 3.064-6.949A10.37 10.37 0 0 1 12.212 2h.176a9.935 9.935 0 0 1 6.614 2.564L16.457 6.88a6.187 6.187 0 0 0-4.131-1.566 6.9 6.9 0 0 0-4.794 1.913 6.618 6.618 0 0 0-2.045 4.657 6.608 6.608 0 0 0 1.882 4.723 6.891 6.891 0 0 0 4.725 2.07h.143c1.41.072 2.8-.354 3.917-1.2a5.77 5.77 0 0 0 2.172-3.41l.043-.117H12.22v-3.41h9.678c.075.617.109 1.238.1 1.859-.099 5.741-4.017 9.6-9.746 9.6l-.215-.002Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href="#"
+                    class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-blue-700 py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-blue-500"
+                  >
+                    <span class="sr-only">Sign in with GitHub</span>
+                    <svg
+                      class="w-6 h-6 text-gray-800 dark:text-white"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
-
-            <div class="block mt-4">
-              <label for="remember_me" class="flex items-center">
-                <input
-                  type="checkbox"
-                  id="remember_me"
-                  name="remember"
-                  class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
-                  ])
-                  !!}
-                />
-                <span class="ms-2 text-sm text-gray-600">Remember Me</span>
-              </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-              <a
-                class="hover:underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                href="{{ route('password.request') }}"
-              >
-                Forgot your password?
-              </a>
-
-              <button
-                class="ms-4 inline-flex items-center px-4 py-2 bg-[#f84525] border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-800 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150"
-                ])
-                }}
-              >
-                Sign In
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-
-    <script>
-      const passwordInput = document.getElementById("password");
-      const togglePasswordButton = document.getElementById("togglePassword");
-
-      togglePasswordButton.addEventListener("click", () => {
-        const type =
-          passwordInput.getAttribute("type") === "password"
-            ? "text"
-            : "password";
-        passwordInput.setAttribute("type", type);
-      });
-    </script>
   </body>
 </html>
