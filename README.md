@@ -63,22 +63,10 @@ This project is licensed under the MIT License.
 
 We're continuously working on enhancing AITHENTHIC. Stay tuned for future updates and exciting new features!
 
-**[Insert a captivating image or GIF of your landing page here]**
+![web2](https://github.com/user-attachments/assets/701db323-3ff0-4397-a7e9-27c31651a4e7)
+![2024-11-30_14-13_1](https://github.com/user-attachments/assets/d79a551c-7cbd-46c9-a559-713736a61a79)
+![2024-11-30_14-14](https://github.com/user-attachments/assets/05fe2877-77b4-4a53-8b5a-8ebed7081e0f)
+![2024-11-30_14-14_1](https://github.com/user-attachments/assets/352b080a-b663-4edd-aaa9-28960b796b3f)
 
-**Let's build the future of AI together!**
-
-**[Your Name or Organization]**
-**[Your Email]**
-**[Your Website]**
-
-**Remember to replace placeholders like `your-username` with your actual GitHub username and add relevant information to the README.**
-
-**Additional Tips:**
-
-* **Use clear and concise language.**
-* **Highlight the unique selling points of your AI.**
-* **Include a strong call-to-action.**
-* **Optimize the README for readability.**
-* **Consider adding a demo video or live preview.**
 
 By following these guidelines and customizing the README to your specific project, you can create a compelling and informative GitHub repository for your AITHENTHIC landing page.
