@@ -33,11 +33,12 @@ AITHENTHIC is a captivating landing page designed to introduce your AI to the wo
 
 ```
 AITHENTHIC/
-├── public/
+├── src/
 │   ├── index.html
 │   └── assets/
 │       ├── css/
-│       │   └── tailwind.css
+│       │   └── input.css
+│       │   └── output.css
 │       └── js/
 │           └── alpine.min.js
 ├── tailwind.config.js
